@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registration">
+
+    <fragment
+        android:id="@+id/registration"
+        android:name="com.geeksforgeeks.navargsexample.Registration"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registration_to_details"
+            app:destination="@id/details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/details"
+        android:name="com.geeksforgeeks.navargsexample.Details"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="user"
+            app:argType="com.geeksforgeeks.navargsexample.User" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Details">
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Name :"
+     android:id="@+id/tv1"
+     android:textSize="20sp"
+     app:layout_constraintLeft_toLeftOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     android:layout_marginTop="50dp"
+     android:layout_marginStart="30dp"
+     />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:id="@+id/tv_name"
+        app:layout_constraintLeft_toRightOf="@id/tv1"
+        app:layout_constraintTop_toTopOf="@id/tv1"
+        android:layout_marginStart="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email :"
+        android:id="@+id/tv2"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:id="@+id/tv_email"
+        app:layout_constraintLeft_toRightOf="@id/tv2"
+        app:layout_constraintTop_toTopOf="@id/tv2"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password :"
+        android:id="@+id/tv3"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:id="@+id/tv_password"
+        app:layout_constraintLeft_toRightOf="@id/tv3"
+        app:layout_constraintTop_toTopOf="@id/tv3"
+        android:layout_marginStart="20dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
